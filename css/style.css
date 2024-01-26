@@ -1,0 +1,25 @@
+/* (>‿◠)✌ CUSTOM PROPERTIES (>‿◠)✌ */
+
+:root {
+  /*   -> COLORES <-   */
+
+  --grey-1: rgb(25,25,25);
+  --grey-2: rgb(50,50,50);
+  --grey-3: rgb(75,75,75);
+  --grey-4: rgb(100,100,100);
+  --grey-5: rgb(125,125,125);
+
+  --color-1: #F2668B;
+  --color-2: #025E73;
+  --color-3: #011F26;
+  --color-4: #026873;
+  --color-5: #03A688;
+
+  /*   -> GRADIENTS <-   */
+
+  --gradient-1: linear-gradient(var(--grey-1), var(--grey-3));
+  --gradient-1-inv: linear-gradient(var(--grey-3), var(--grey-1));
+  --gradient-2: linear-gradient(var(--grey-1), var(--grey-4), var(--grey-1));
+}
+
+
