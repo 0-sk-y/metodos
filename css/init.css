@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   background-color: black;
+  overflow: hidden;
 }
 
 *,
@@ -54,3 +55,18 @@ video {
 ._center-3 {grid-area: _center-3;}
 .footer {grid-area: footer;}
 
+.header,
+._left,
+._center-1,
+._center-2,
+._center-3,
+._right,
+.footer {
+  position: relative;
+}
+
+/* (>‿◠)✌ HEADER (>‿◠)✌ */
+/* (>‿◠)✌ LEFT (>‿◠)✌ */
+/* (>‿◠)✌ CENTER (>‿◠)✌ */
+/* (>‿◠)✌ RIGTH (>‿◠)✌ */
+/* (>‿◠)✌ FOOTER (>‿◠)✌ */
