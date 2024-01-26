@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  background-color: black;
 }
 
 *,
@@ -29,4 +30,27 @@ video {
   max-width: 100%;
   height: auto;
 }
+
+/* (>‿◠)✌ LAYOUT (>‿◠)✌ */
+
+.gc {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  grid-template-rows:10% repeat(3, 1fr) 5%;
+  grid-template-areas: 
+  "header header header"
+  "_left _center-1 _right"
+  "_left _center-2 _right"
+  "_left _center-3 _right"
+  "footer footer footer";
+}
+
+.header {grid-area: header;}
+._left {grid-area: _left;}
+._center-1 {grid-area: _center-1;}
+._center-2 {grid-area: _center-2;}
+._center-3 {grid-area: _center-3;}
+.footer {grid-area: footer;}
 
