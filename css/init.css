@@ -157,6 +157,7 @@ video {
 .menu-left-cont,
 .menu-right-cont {
   position: absolute;
+  width: 50%;
   border: var(--border-3);
   background-image: var(--gradient-2);
   padding: 0.5rem;
@@ -189,7 +190,7 @@ video {
 }
 
 .menu-left-cont {
-  left: -30%;
+  left: -46%;
   top: 0;
 }
 
@@ -198,7 +199,7 @@ video {
 }
 
 .menu-right-cont {
-  right: -30%;
+  right: -46%;
   top: 0;
 }
 
