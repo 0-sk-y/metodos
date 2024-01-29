@@ -146,6 +146,66 @@ video {
 }
 
 /* (>‿◠)✌ CENTER (>‿◠)✌ */
+
+._center-1,
+._center-2,
+._center-3 {
+  border: var(--border-3);
+  overflow: hidden;
+}
+
+.menu-left-cont,
+.menu-right-cont {
+  position: absolute;
+  border: var(--border-3);
+  background-image: var(--gradient-2);
+  padding: 0.5rem;
+  height: 100%;
+  transition: left 500ms ease-in-out,
+  right 500ms ease-in-out;
+  & .menu-left,
+  & .menu-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    & .menu-left__link,
+    & .menu-right__link {
+      flex-grow: 1;
+      display: inline-block;
+      border: var(--border-2);
+      background-color: var(--grey-1);
+      padding: 0 1rem;
+      color: var(--color-4);
+      transition: background-color 500ms ease-in-out;
+    }
+    & .menu-left__link:hover,
+    & .menu-right__link:hover {
+      background-color: var(--color-1);
+      border: 1px solid var(--color-1);
+      color: var(--grey-1);
+    }
+  }
+}
+
+.menu-left-cont {
+  left: -30%;
+  top: 0;
+}
+
+.menu-left-cont:hover {
+  left: 0;
+}
+
+.menu-right-cont {
+  right: -30%;
+  top: 0;
+}
+
+.menu-right-cont:hover {
+  right: 0;
+}
+
 /* (>‿◠)✌ FOOTER (>‿◠)✌ */
 
 .footer {
