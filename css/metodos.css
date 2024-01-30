@@ -1,0 +1,84 @@
+/* FORM */
+
+
+
+/* SCAMPER */
+
+.scamper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 5%;
+  grid-template-areas: 
+  "header"
+  "formulario"
+  "footer";
+}
+
+.header {grid-area: header;}
+.formulario {grid-area: formulario;}
+.footer {grid-area: footer;}
+
+.tema-cont {
+  width: 100%;
+  border: var(--border-2);
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  background-image: var(--gradient-1-inv);
+  & .tema {
+    text-align: center;
+    color: var(--color-1);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  & .input-cont {
+    flex-grow: 1;
+    background-image: var(--gradient-2);
+    display: flex;
+    align-items: center;
+    border: var(--border-2);
+    & label {
+      color: var(--color-6);
+      padding: 0.7rem;
+      border: var(--border-2);
+      margin: 0 0.5rem;
+      background-image: var(--gradient-1);
+      font-weight: 700;
+      font-size: 1.3rem;
+      animation: hue 10s ease-in-out infinite;
+    }
+    & .enviar {
+      width: 80%;
+      border-radius: 1rem;
+      border: var(--border-3);
+      transition: background-color 500ms ease-in-out,
+      letter-spacing 500ms ease-in-out;
+      font-weight: 600;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      outline: 5px solid var(--grey-2);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-5);
+        color: var(--grey-1);
+        letter-spacing: 1rem;
+      }
+    }
+    & input {
+      width: 95%;
+      padding: 0.5rem;
+      background-color: var(--grey-1);
+      color: var(--color-6);
+      text-align: center;
+      border-radius: 0.5rem;
+    }
+  }
+}
