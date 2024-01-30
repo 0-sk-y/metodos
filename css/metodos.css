@@ -43,9 +43,13 @@
     display: flex;
     align-items: center;
     border: var(--border-2);
+    & .tema-a-evaluar {
+      width: 92%;
+      font-size: 1.3rem;
+    }
     & label {
       color: var(--color-6);
-      padding: 0.7rem;
+      padding: 0.3rem 0.5rem;
       border: var(--border-2);
       margin: 0 0.5rem;
       background-image: var(--gradient-1);
