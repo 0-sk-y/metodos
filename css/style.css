@@ -19,7 +19,7 @@
 
   --gradient-1: linear-gradient(var(--grey-1), var(--grey-2));
   --gradient-1-inv: linear-gradient(var(--grey-2), var(--grey-1));
-  --gradient-2: linear-gradient(var(--grey-1), var(--grey-4), var(--grey-1));
+  --gradient-2: linear-gradient(var(--grey-1), var(--grey-4),var(--grey-1));
 
   /*   -> BORDER <-   */
 
