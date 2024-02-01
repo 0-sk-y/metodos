@@ -1,0 +1,111 @@
+/* (>‿◠)✌ Metodo Template Layout (>‿◠)✌ */
+
+
+.metodo-template {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr 8%;
+  grid-template-areas: 
+  "header-template"
+  "formulario-cont"
+  "footer";
+}
+
+.header-template {grid-area: header-template;}
+.formulario-cont {grid-area: formulario-cont;}
+.footer {grid-area: footer;}
+
+.header-template,
+.formulario-cont,
+.footer {
+  position: relative;
+}
+
+.header-template {
+  background-image: var(--gradient-2);
+  border: var(--border-3);
+  border-radius: 2rem 2rem 0 0;
+  & .titulo-template {
+    width: 98%;
+    color: var(--color-5);
+    letter-spacing: 2rem;
+    margin: 0.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: var(--border-3);
+    border-radius: 3rem;
+    background-image: var(--gradient-1-inv);
+  }
+  & .sub-titulo-template {
+    text-align: center;
+    text-shadow: 1px 1px 0 rgb(150,150,150);
+  }
+}
+
+
+.formulario-cont {
+  background-image: var(--gradient-1-inv);
+  & .formulario {
+    width: 100%;
+    & label {
+      color: var(--color-6);
+      border: var(--border-3);
+      padding: 0.9rem 0.7rem;
+      background-image: var(--gradient-1-inv);
+      outline: var(--border-1);
+      animation: hue 10s ease-in-out infinite;
+      margin: 0 0.4rem 0 0.3rem;
+    }
+    & input {
+      width: 96%;
+      text-align: center;
+      background-image: var(--gradient-1);
+      padding: 0.5rem;
+      border: var(--border-2);
+      color: var(--color-6);
+      margin: 0.3rem 0;
+      font-size: 1.3rem;
+      border-radius: 0.3rem;
+    }
+    & .boton-enviar {
+      cursor: pointer;
+      width: 100%;
+      background-color: var(--color-6);
+      transition: filter 500ms ease-in-out,
+      letter-spacing 500ms ease-in-out;
+      &:hover {
+        filter: invert(1);
+        letter-spacing: 1rem;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  & .home-button-cont {
+    width: 100%;
+    & .home-button-cont__link {
+      width: 6%;
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-5);
+      background-color: var(--grey-1);
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      border: var(--border-3);
+      transition: background-color 500ms ease-in-out,
+      color 500ms ease-in-out;
+      &:hover {
+        background-color: var(--color-6);
+        color: var(--grey-1);
+        border: 1px solid var(--color-6);
+      }
+    }
+  }
+}
+
