@@ -24,7 +24,7 @@
 }
 
 .header-template {
-  background-image: var(--gradient-2);
+  background-image: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(195,195,195,1) 8%, rgba(78,78,78,1) 17%, rgba(92,91,91,1) 20%, rgba(205,205,205,1) 43%, rgba(82,82,82,1) 53%, rgba(91,91,91,1) 59%, rgba(65,64,64,1) 62%, rgba(42,42,42,1) 76%, rgba(154,154,154,1) 92%, rgba(0,0,0,1) 100%);
   border: var(--border-3);
   border-radius: 2rem 2rem 0 0;
   & .titulo-template {
@@ -41,7 +41,7 @@
   }
   & .sub-titulo-template {
     text-align: center;
-    text-shadow: 1px 2px 0 var(--grey-5);
+    text-shadow: 1px 1px 0 rgba(255,255,255,.7);
   }
 }
 
@@ -72,15 +72,17 @@
         animation: border-anim 2s ease-in-out alternate infinite;
       }
       &:focus {
-        border: 1px solid aqua;
+        background-image: var(--gradient-1-inv);
       }
     }
     & .boton-enviar {
       cursor: pointer;
       width: 100%;
+      height: 50px;
       background-color: var(--color-6);
       transition: filter 500ms ease-in-out,
       letter-spacing 500ms ease-in-out;
+      font-size: 1.5rem;
       &:hover {
         filter: invert(1);
         letter-spacing: 1rem;
