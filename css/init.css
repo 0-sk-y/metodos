@@ -78,11 +78,11 @@ video {
   & .logo-cont {
     display: flex;
     align-items: center;
-    border: var(--border-2);
+    border: var(--border-1);
     border-radius: 3rem;
     padding: 0.3rem 0.5rem;
     background-image: var(--gradient-1-inv);
-    outline: var(--border-1);
+    outline: var(--border-2);
     outline-offset: 0.3rem;
     & .logo {
       margin-right: 0.5rem;

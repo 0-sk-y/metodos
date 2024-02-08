@@ -40,3 +40,12 @@
     filter: hue-rotate(360deg);
   }
 }
+
+@keyframes border-anim {
+  0% {
+    border: 1px solid var(--color-2);
+  }
+  100% {
+    border: 1px solid var(--color-5);
+  }
+}
