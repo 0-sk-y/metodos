@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
+  /* background-color: black; */
 }
 
 *,
@@ -210,7 +210,7 @@ video {
 /* (>‿◠)✌ FOOTER (>‿◠)✌ */
 
 .footer {
-  background-image: var(--gradient-2);
+  background-image: var(--gradient-3);
   border: var(--border-3);
   padding: 0.5rem 1rem;
   border-radius: 0 0 3rem 3rem;

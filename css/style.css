@@ -20,6 +20,9 @@
   --gradient-1: linear-gradient(var(--grey-1), var(--grey-2));
   --gradient-1-inv: linear-gradient(var(--grey-2), var(--grey-1));
   --gradient-2: linear-gradient(var(--grey-1), var(--grey-4),var(--grey-1));
+  --gradient-3: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(195,195,195,1) 8%, rgba(78,78,78,1) 17%, rgba(92,91,91,1) 20%, rgba(205,205,205,1) 43%, rgba(82,82,82,1) 53%, rgba(91,91,91,1) 59%, rgba(65,64,64,1) 62%, rgba(42,42,42,1) 76%, rgba(154,154,154,1) 92%, rgba(0,0,0,1) 100%);
+  --gradient-4: radial-gradient(circle, rgba(0,152,156,1) 0%, rgba(1,68,70,1) 36%, rgba(0,0,0,1) 100%);
+
 
   /*   -> BORDER <-   */
 
